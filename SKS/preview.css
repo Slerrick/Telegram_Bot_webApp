@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(30,100,255);
+  color: rgba(255,255,255,0.8);
+  text-wrap: wrap;
+  font-family: Arial, Verdana, Sans-Serif;
+  transition: 0.8s;
+}
+body{
+  background-image: var(--var-bg-greyblue);
+  display: flex;
+  flex-direction: column;
+}
+:root {
+  --var-size-header: 190px;
+  --var-shadow: rgba(0,0,0,0.4);
+  --var-ice-blue: rgb(30, 80, 255);
+  --var-h2: 1.8em;
+  --var-p: 1.3em;
+  --var-bottom-border:white 0.8em solid;
+  --var-bg-greyblue: linear-gradient(to left, rgb(30,100,255), rgb(32,17,140));
+}
+iframe{
+  background-color: transparent;
+  scale: 0.6;
+}
+header {
+  display: flex;
+background-image: url(./ice-winter-lake.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: var(--var-size-header);
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: var(--var-bottom-border);
+  margin-bottom: 2.8em;
+}
+
+h1,h2,p {
+  font-size: 3.5em;
+  padding: 2vmin;
+  background-color: transparent;
+}
+h2{
+  font-size: var(--var-h2);
+  text-align: center;
+}
+p{
+  font-size: var(--var-p);
+  display: block;
+  text-align: center;
+}
+.Ice_text {
+  background-color: var(--var-shadow);
+  border-radius: 1.2em;
+  text-shadow: 0.1em 0 var(--var-shadow);
+}
+
+main {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: var(--var-bottom-border);
+  padding-bottom: 2.8em;
+  background-image: var(--var-bg-greyblue);
+}
+
+.table {
+  margin-top: 8vw;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 30vmin;
+  max-width: 90vw;
+  background-image: url(./Snow.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  border-radius: 2em;
+}
+
+.start {
+  align-self: flex-start;
+  margin-left: 3vw;
+}
+.end{
+  align-self: flex-end;
+  margin-right: 3vw;
+}
+footer{
+  color: var(--var-ice-blue)
+}
+
+@media (max-width: 768px) {
+  :root {
+    --var-size-header: 30vh;
+  }
+  header {
+    padding: 2vh;
+  }
+  iframe{
+    scale: 0.6;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  :root {
+    --var-size-header: 100vh;
+    --var-h2: 5em;
+    --var-p: 3.5em;
+  }
+  
+  .Ice_text {
+    font-size: 6em;
+  }
+
+  iframe{
+    scale: 1.3;
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  :root {
+    --var-size-header: 70vh;
+    --var-h2: 5em;
+    --var-p: 3.25em;
+  }
+  
+  .Ice_text {
+    font-size: 9em;
+  }
+
+  iframe{
+    scale: 1;
+  }
+}
