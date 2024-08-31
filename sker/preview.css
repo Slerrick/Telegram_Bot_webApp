@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   background-color: rgb(30,100,255);
-  color: rgba(255,255,255,0.8);
   text-wrap: wrap;
   font-family: Arial, Verdana, Sans-Serif;
   transition: 0.8s;
@@ -21,13 +20,24 @@ body{
   --var-bottom-border:white 0.8em solid;
   --var-bg-greyblue: linear-gradient(to left, rgb(30,100,255), rgb(32,17,140));
 }
-iframe{
+h1,h2,p {
+  font-size: 3.5em;
+  padding: 2vmin;
   background-color: transparent;
-  scale: 0.6;
+  color: rgba(255,255,255,0.8);
+}
+.buy{
+  height: auto;
+  width: 80%;
+  border-radius: 0.7em;
+}
+.gray{
+  color: wheat;
+  mix-blend-mode:color-dodge;
 }
 header {
   display: flex;
-background-image: url(./ice-winter-lake.jpg);
+  background-image: url(./ice-winter-lake.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,12 +47,6 @@ background-image: url(./ice-winter-lake.jpg);
   justify-content: center;
   border-bottom: var(--var-bottom-border);
   margin-bottom: 2.8em;
-}
-
-h1,h2,p {
-  font-size: 3.5em;
-  padding: 2vmin;
-  background-color: transparent;
 }
 h2{
   font-size: var(--var-h2);
@@ -58,7 +62,10 @@ p{
   border-radius: 1.2em;
   text-shadow: 0.1em 0 var(--var-shadow);
 }
-
+.red{background-color:    rgb(230, 50, 55)}
+.orange{background-color: rgb(250, 120, 95)}
+.yellow{background-color: rgb(200, 200, 55)}
+.green{background-color:  rgb(60, 200, 65)}
 main {
   min-height: 100vh;
   width: 100vw;
@@ -105,9 +112,6 @@ footer{
   header {
     padding: 2vh;
   }
-  iframe{
-    scale: 0.6;
-  }
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
@@ -120,10 +124,6 @@ footer{
   .Ice_text {
     font-size: 6em;
   }
-
-  iframe{
-    scale: 1.3;
-  }
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
@@ -135,9 +135,5 @@ footer{
   
   .Ice_text {
     font-size: 9em;
-  }
-
-  iframe{
-    scale: 1;
   }
 }
