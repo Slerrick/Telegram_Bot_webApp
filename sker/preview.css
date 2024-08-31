@@ -37,7 +37,7 @@ h1,h2,p {
 }
 header {
   display: flex;
-  background-image: url(./ice-winter-lake.jpg);
+  background-image: url(./image/ice-winter-lake.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@ main {
   flex-direction: column;
   min-height: 30vmin;
   max-width: 90vw;
-  background-image: url(./Snow.jpg);
+  background-image: url(./image/Snow.jpg);
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
